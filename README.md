@@ -1,6 +1,7 @@
 # Edison Board for WSIE Project
 Edison board setups for industrial wireless research
 
+# This is a still being developed, DO NOT USE YET!
 
 Rick Candell
 Notes on setting up an Edison board for our project.
