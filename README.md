@@ -1,4 +1,4 @@
-# edison_wsie
+# Edison Board for WSIE Project
 Edison board setups for industrial wireless research
 
 
