@@ -75,11 +75,11 @@ var intervalIDLed;
 // connect a jumper wire to the sampled analog input and touch it to
 // a +1.8V, +3.3V, +5V or GND input to change the value read by the analog input
 
-var BlinkFastMs = 100;
-var BlinkSlowMs = 500;
+var BlinkFastMs = 1000.0/100.0;
+var BlinkSlowMs = 1000.0/10.0;
 
 var analogIn ;
-var lightThreshold = 0.5;
+var lightThreshold = 0.8;
 var lightSensorState = 1;  // 1 = above threshold, 0 = below
 var readLightSensor = function() {
     // Read light sensor (on ADC1)
