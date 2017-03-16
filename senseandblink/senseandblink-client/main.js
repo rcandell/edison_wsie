@@ -75,8 +75,8 @@ var intervalIDLed;
 // connect a jumper wire to the sampled analog input and touch it to
 // a +1.8V, +3.3V, +5V or GND input to change the value read by the analog input
 
-var BlinkFastMs = 1000.0/100.0;
-var BlinkSlowMs = 1000.0/10.0;
+var BlinkNormalMs = 1000.0/5.0;
+var BlinkAlertMs = 1000.0/50.0;
 
 var analogIn ;
 var lightThreshold = 0.8;
@@ -86,16 +86,16 @@ var readLightSensor = function() {
     var v1 = adc.readADC(1);
     //process.stdout.write(v1 + " ") ;          // write a stream of analog values to the console    
     if ((!lightSensorState) && (v1>lightThreshold)){
-        console.log("changing to fast")
+        console.log("changing to normal")
         lightSensorState = 1;
         clearInterval(intervalIDLed);
-        intervalIDLed = setInterval(writeLed, BlinkFastMs) ;  // start the periodic read
+        intervalIDLed = setInterval(writeLed, BlinkNormalMs) ;  // start the periodic read
     }
     else if ((lightSensorState) && (v1<lightThreshold)){
-        console.log("changing to slow")
+        console.log("changing to alert")
         lightSensorState = 0;
         clearInterval(intervalIDLed);
-        intervalIDLed = setInterval(writeLed, BlinkSlowMs) ;  // start the periodic read
+        intervalIDLed = setInterval(writeLed, BlinkAlertMs) ;  // start the periodic read
     }
 };
 
@@ -111,5 +111,5 @@ function writeLed()
 
 // setup perdiodic activity for light sensor reading
 intervalIDLightSensor = setInterval(readLightSensor, 500) ;  // start the periodic read
-intervalIDLed = setInterval(writeLed, BlinkFastMs) ;  // start the periodic read
+intervalIDLed = setInterval(writeLed, BlinkNormalMs) ;  // start the periodic read
 
