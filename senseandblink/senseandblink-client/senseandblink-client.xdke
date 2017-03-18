@@ -35,8 +35,8 @@
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1488819235005,
-        "modified": 1488819235005,
+        "previousModTime": 1489861335511,
+        "modified": 1489861335511,
         "seen": true,
         "name": "package.json"
       },
@@ -53,8 +53,8 @@
         "name": "senseandblink-client.xdk"
       },
       "senseandblink-client.xdke": {
-        "previousModTime": 1489682586906,
-        "modified": 1489682586906,
+        "previousModTime": 1489861291999,
+        "modified": 1489861291999,
         "seen": true,
         "name": "senseandblink-client.xdke"
       },
@@ -78,8 +78,8 @@
       }
     },
     "boardFileStatus": {
-      "main.js": {
-        "previousModTime": 1489682602879
+      "package.json": {
+        "previousModTime": 1489861350844
       }
     }
   }

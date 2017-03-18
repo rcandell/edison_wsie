@@ -1,12 +1,12 @@
 {
-  "name": "xdk-iot-analog-read",
-  "description": "",
-  "version": "0.0.0",
+  "name": "Rick's senseand blink client",
+  "description": "Blinks LED according to light sensor levels",
+  "version": "0.0.1",
   "main": "main.js",
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "BSD-3-Clause",
+  "license": "publoc domain",
   "private": true,
   "dependencies": {
   }
